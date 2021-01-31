@@ -6,13 +6,14 @@ const Modal = defineComponent({
   }
 })
 
-let shouldError = true
+let shouldError = false
 
 export const Async = defineAsyncComponent({
   // loader: () => import('./Modal.vue'),
+
   loader: () => new Promise((res, rej) => {
     setTimeout(() => {
-      if (!shouldError) {
+      if (shouldError) {
         rej('Error')
       }
 

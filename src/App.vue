@@ -4,10 +4,12 @@
 
   <h1>v-once</h1>
   <Form 
+    v-if="termsOfService"
     :termsOfService="termsOfService" 
-    :msg="msg" 
+    :msg="msg"  
   />
   <input v-model="msg" />
+
   <h1>Recursive</h1>
   <FileTree :contents="tree" />
 

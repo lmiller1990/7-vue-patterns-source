@@ -1,6 +1,8 @@
 <template>
   <form>
-    <Static :termsOfService="termsOfService" />
+    <TermsOfService 
+      :termsOfService="termsOfService" 
+    />
     <div>
       Name is: {{ msg }}
     </div>
@@ -9,7 +11,7 @@
 
 <script setup lang="ts">
 import { defineProps, onRenderTracked } from 'vue'
-import Static from './Static.vue'
+import TermsOfService from './TermsOfService.vue'
 
 let count = 0
 
