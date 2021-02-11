@@ -2,6 +2,7 @@
   <form>
     <TermsOfService 
       :termsOfService="termsOfService" 
+      v-once
     />
     <div>
       Name is: {{ msg }}

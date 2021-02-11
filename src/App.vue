@@ -6,7 +6,7 @@
   <Form 
     v-if="termsOfService"
     :termsOfService="termsOfService" 
-    :msg="msg"  
+    :msg="msg"
   />
   <input v-model="msg" />
 
